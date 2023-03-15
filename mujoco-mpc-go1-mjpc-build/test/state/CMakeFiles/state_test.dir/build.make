@@ -108,7 +108,7 @@ bin/state_test: lib/libabsl_random_internal_seed_material.a
 bin/state_test: lib/libabsl_bad_optional_access.a
 bin/state_test: lib/libabsl_random_seed_gen_exception.a
 bin/state_test: lib/libthreadpool.a
-bin/state_test: lib/libmujoco.so.2.3.1
+bin/state_test: lib/libmujoco.so.2.3.2
 bin/state_test: lib/libabsl_strings.a
 bin/state_test: lib/libabsl_strings_internal.a
 bin/state_test: lib/libabsl_base.a

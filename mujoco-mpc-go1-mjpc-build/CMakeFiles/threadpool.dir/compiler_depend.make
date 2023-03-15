@@ -283,7 +283,6 @@ CMakeFiles/threadpool.dir/threadpool.cc.o: /home/leggedrobot/Documents/GitHub/go
   _deps/abseil-cpp-src/absl/base/config.h \
   /usr/include/c++/11/cstddef \
   _deps/abseil-cpp-src/absl/base/options.h \
-  /usr/include/c++/11/ciso646 \
   _deps/abseil-cpp-src/absl/base/policy_checks.h
 
 
@@ -368,8 +367,6 @@ _deps/abseil-cpp-src/absl/base/config.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/c++/11/ciso646:
 
 /usr/include/asm-generic/errno-base.h:
 

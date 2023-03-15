@@ -1,0 +1,40 @@
+#include <mujoco.h>
+#include <iostream>
+
+int main(int argc, char const *argv[]) {
+  mj_activate("path_to_your_mjkey.txt");
+  mjModel* m = mj_loadXML("path_to_your_model.xml", NULL, NULL, 0);
+  mjData* d = mj_makeData(m);
+
+  while (true) {
+    mj_step(m, d);
+
+    // Collect position data
+    for (int i = 0; i < m->nbody; i++) {
+      std::cout << "Position of body " << i << ": "
+                << d->xpos[i * 3] << " " << d->xpos[i * 3 + 1] << " " << d->xpos[i * 3 + 2] << std::endl;
+    }
+
+    // Collect velocity data
+    for (int i = 0; i < m->nbody; i++) {
+      std::cout << "Velocity of body " << i << ": "
+                << d->xvel[i * 3] << " " << d->xvel[i * 3 + 1] << " " << d->xvel[i * 3 + 2] << std::endl;
+    }
+
+    // Collect force data
+    for (int i = 0; i < m->nbody; i++) {
+      std::cout << "Force on body " << i << ": "
+                << d->xfrc_applied[i * 3] << " " << d->xfrc_applied[i * 3 + 1] << " " << d->xfrc_applied[i * 3 + 2] << std::endl;
+    }
+
+    // Collect torque data
+    for (int i = 0; i < m->nbody; i++) {
+      std::cout << "Torque on body " << i << ": "
+                << d->xmat[i].w << " " << d->xmat[i].x << " " << d->xmat[i].y << " " << d->xmat[i].z << std::endl;
+    }
+  }
+  mj_deleteData(d);
+  mj_deleteModel(m);
+  mj_deactivate();
+  return 0;
+}

@@ -21,7 +21,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "GIT_TAG" "58d77fa8070e8cec2dc1ed015d66b454c8d78850" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/google/googletest.git" "GIT_TAG" "b796f7d44681514f58a683a3a71ff17c94edb0c1" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
                     SOURCE_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/googletest-src"
                     BINARY_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""

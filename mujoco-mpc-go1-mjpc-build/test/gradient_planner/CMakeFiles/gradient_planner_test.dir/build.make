@@ -108,7 +108,7 @@ bin/gradient_planner_test: lib/libabsl_random_internal_seed_material.a
 bin/gradient_planner_test: lib/libabsl_bad_optional_access.a
 bin/gradient_planner_test: lib/libabsl_random_seed_gen_exception.a
 bin/gradient_planner_test: lib/libthreadpool.a
-bin/gradient_planner_test: lib/libmujoco.so.2.3.1
+bin/gradient_planner_test: lib/libmujoco.so.2.3.2
 bin/gradient_planner_test: lib/libabsl_strings.a
 bin/gradient_planner_test: lib/libabsl_strings_internal.a
 bin/gradient_planner_test: lib/libabsl_base.a

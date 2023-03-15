@@ -215,4 +215,6 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/xml/xml.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
  /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src/xml/xml_util.h \
  /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src/xml/xml_native_writer.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src/xml/xml_urdf.h
+ /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src/xml/xml_urdf.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h

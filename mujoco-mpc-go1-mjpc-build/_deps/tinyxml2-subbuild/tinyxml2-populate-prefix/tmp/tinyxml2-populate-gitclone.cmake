@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout 1dee28e51f9175a31955b9791c74c430fe13dc82 --
+  COMMAND "/usr/bin/git"  checkout 9a89766acc42ddfa9e7133c7d81a5bda108a0ade --
   WORKING_DIRECTORY "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyxml2-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '1dee28e51f9175a31955b9791c74c430fe13dc82'")
+  message(FATAL_ERROR "Failed to checkout tag: '9a89766acc42ddfa9e7133c7d81a5bda108a0ade'")
 endif()
 
 set(init_submodules TRUE)

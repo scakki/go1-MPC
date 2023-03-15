@@ -108,7 +108,7 @@ bin/task_test: lib/libabsl_random_internal_seed_material.a
 bin/task_test: lib/libabsl_bad_optional_access.a
 bin/task_test: lib/libabsl_random_seed_gen_exception.a
 bin/task_test: lib/libthreadpool.a
-bin/task_test: lib/libmujoco.so.2.3.1
+bin/task_test: lib/libmujoco.so.2.3.2
 bin/task_test: lib/libabsl_strings.a
 bin/task_test: lib/libabsl_strings_internal.a
 bin/task_test: lib/libabsl_base.a

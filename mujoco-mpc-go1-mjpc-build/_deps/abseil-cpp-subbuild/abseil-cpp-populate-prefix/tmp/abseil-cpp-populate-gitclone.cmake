@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout 8c0b94e793a66495e0b1f34a5eb26bd7dc672db0 --
+  COMMAND "/usr/bin/git"  checkout 78be63686ba732b25052be15f8d6dee891c05749 --
   WORKING_DIRECTORY "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '8c0b94e793a66495e0b1f34a5eb26bd7dc672db0'")
+  message(FATAL_ERROR "Failed to checkout tag: '78be63686ba732b25052be15f8d6dee891c05749'")
 endif()
 
 set(init_submodules TRUE)

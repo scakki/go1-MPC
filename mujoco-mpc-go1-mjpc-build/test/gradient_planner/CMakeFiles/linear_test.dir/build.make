@@ -116,7 +116,7 @@ bin/linear_test: lib/libabsl_base.a
 bin/linear_test: lib/libabsl_raw_logging_internal.a
 bin/linear_test: lib/libabsl_log_severity.a
 bin/linear_test: lib/libabsl_spinlock_wait.a
-bin/linear_test: lib/libmujoco.so.2.3.1
+bin/linear_test: lib/libmujoco.so.2.3.2
 bin/linear_test: lib/libgtest.a
 bin/linear_test: test/gradient_planner/CMakeFiles/linear_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/linear_test"

@@ -189,7 +189,6 @@ _deps/abseil-cpp-build/absl/types/CMakeFiles/absl_bad_optional_access.dir/bad_op
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/cstddef \
   _deps/abseil-cpp-src/absl/base/options.h \
-  /usr/include/c++/11/ciso646 \
   _deps/abseil-cpp-src/absl/base/policy_checks.h \
   /usr/include/c++/11/optional \
   /usr/include/c++/11/utility \
@@ -236,8 +235,6 @@ _deps/abseil-cpp-src/absl/base/options.h:
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/stdio.h:
-
-/usr/include/c++/11/ciso646:
 
 /usr/include/c++/11/cstdio:
 

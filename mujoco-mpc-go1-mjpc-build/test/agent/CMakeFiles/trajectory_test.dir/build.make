@@ -94,7 +94,7 @@ bin/trajectory_test: test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.c
 bin/trajectory_test: test/agent/CMakeFiles/trajectory_test.dir/build.make
 bin/trajectory_test: lib/libgtest_main.a
 bin/trajectory_test: lib/libmjpc.a
-bin/trajectory_test: lib/libmujoco.so.2.3.1
+bin/trajectory_test: lib/libmujoco.so.2.3.2
 bin/trajectory_test: lib/libgmock.a
 bin/trajectory_test: lib/libabsl_random_distributions.a
 bin/trajectory_test: lib/libabsl_random_seed_sequences.a

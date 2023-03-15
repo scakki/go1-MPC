@@ -146,7 +146,7 @@ bin/mjpc: lib/libabsl_strings.a
 bin/mjpc: lib/libglfw3.a
 bin/mjpc: lib/libmjpc.a
 bin/mjpc: lib/liblodepng.a
-bin/mjpc: lib/libmujoco.so.2.3.1
+bin/mjpc: lib/libmujoco.so.2.3.2
 bin/mjpc: lib/libthreadpool.a
 bin/mjpc: lib/libabsl_flags_usage.a
 bin/mjpc: lib/libabsl_flags_usage_internal.a
@@ -165,6 +165,10 @@ bin/mjpc: lib/libabsl_cordz_info.a
 bin/mjpc: lib/libabsl_cord_internal.a
 bin/mjpc: lib/libabsl_cordz_functions.a
 bin/mjpc: lib/libabsl_cordz_handle.a
+bin/mjpc: lib/libabsl_crc_cord_state.a
+bin/mjpc: lib/libabsl_crc32c.a
+bin/mjpc: lib/libabsl_crc_internal.a
+bin/mjpc: lib/libabsl_crc_cpu_detect.a
 bin/mjpc: lib/libabsl_hash.a
 bin/mjpc: lib/libabsl_city.a
 bin/mjpc: lib/libabsl_bad_variant_access.a

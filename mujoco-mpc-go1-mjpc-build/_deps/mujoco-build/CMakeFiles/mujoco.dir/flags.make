@@ -7,11 +7,11 @@ C_DEFINES = -DCCD_STATIC_DEFINE -DMUJOCO_DLL_EXPORTS -D_GNU_SOURCE -DmjUSEPLATFO
 
 C_INCLUDES = -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/ccd-src/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/ccd-build/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/lodepng-src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/src/libqhull_r -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyobjloader-src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyxml2-src
 
-C_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fdata-sections -ffunction-sections -mavx -Wno-int-in-bool-context -Wno-maybe-uninitialized -Wno-sign-compare -Wno-stringop-overflow -Wno-stringop-truncation -std=c11
+C_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fdata-sections -ffunction-sections -mavx -Werror -Wall -Wimplicit-fallthrough -Wunused -Wno-int-in-bool-context -Wno-sign-compare -Wno-unknown-pragmas -Wimplicit-fallthrough=5 -Wno-maybe-uninitialized -std=c11
 
 CXX_DEFINES = -DCCD_STATIC_DEFINE -DMUJOCO_DLL_EXPORTS -D_GNU_SOURCE -DmjUSEPLATFORMSIMD -Dmujoco_EXPORTS
 
 CXX_INCLUDES = -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/ccd-src/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/ccd-build/src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/lodepng-src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/src/libqhull_r -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyobjloader-src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyxml2-src
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Wno-int-in-bool-context -Wno-maybe-uninitialized -Wno-sign-compare -Wno-stringop-overflow -Wno-stringop-truncation -std=c++17
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Werror -Wall -Wimplicit-fallthrough -Wunused -Wno-int-in-bool-context -Wno-sign-compare -Wno-unknown-pragmas -Wimplicit-fallthrough=5 -Wno-maybe-uninitialized -std=c++17
 

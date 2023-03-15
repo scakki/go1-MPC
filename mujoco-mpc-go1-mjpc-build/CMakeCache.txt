@@ -14,6 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
+//If ON, Abseil will build libraries that you can use to write
+// tests against Abseil code. This option requires that Abseil
+// is configured to use GoogleTest.
+ABSL_BUILD_TEST_HELPERS:BOOL=OFF
+
 //Enable install rule
 ABSL_ENABLE_INSTALL:BOOL=OFF
 
@@ -31,6 +36,10 @@ ABSL_USE_EXTERNAL_GOOGLETEST:BOOL=OFF
 
 //If ON, abseil will download HEAD from GoogleTest at config time.
 ABSL_USE_GOOGLETEST_HEAD:BOOL=OFF
+
+//Silence warnings in Abseil headers by marking them as SYSTEM
+// includes
+ABSL_USE_SYSTEM_INCLUDES:BOOL=OFF
 
 //Build the documentation
 BUILD_DOCUMENTATION:BOOL=OFF
@@ -441,6 +450,10 @@ GLFW_USE_WAYLAND:BOOL=OFF
 //Assume the Vulkan loader is linked with the application
 GLFW_VULKAN_STATIC:BOOL=OFF
 
+//Use Abseil and RE2. Requires Abseil and RE2 to be separately
+// added to the build.
+GTEST_HAS_ABSL:BOOL=OFF
+
 //Enable installation of googletest. (Projects embedding googletest
 // may want to turn this OFF.)
 INSTALL_GTEST:BOOL=ON
@@ -476,10 +489,10 @@ MJPC_DEP_VERSION_lodepng:STRING=b4ed2cd7ecf61d29076169b49199371456d4f90b
 MUJOCO_BUILD_MACOS_FRAMEWORKS:BOOL=OFF
 
 //Version of `Eigen3` to be fetched.
-MUJOCO_DEP_VERSION_Eigen3:STRING=3bb6a48d8c171cf20b5f8e48bfb4e424fbd4f79e
+MUJOCO_DEP_VERSION_Eigen3:STRING=3460f3558e7b469efb8a225894e21929c8c77629
 
 //Version of `abseil` to be fetched.
-MUJOCO_DEP_VERSION_abseil:STRING=8c0b94e793a66495e0b1f34a5eb26bd7dc672db0
+MUJOCO_DEP_VERSION_abseil:STRING=78be63686ba732b25052be15f8d6dee891c05749
 
 //Version of `benchmark` to be fetched.
 MUJOCO_DEP_VERSION_benchmark:STRING=d572f4777349d43653b21d6c2fc63020ab326db2
@@ -491,7 +504,7 @@ MUJOCO_DEP_VERSION_ccd:STRING=7931e764a19ef6b21b443376c699bbc9c6d4fba8
 MUJOCO_DEP_VERSION_glfw:STRING=7d5a16ce714f0b5f4efa3262de22e4d948851525
 
 //Version of `gtest` to be fetched.
-MUJOCO_DEP_VERSION_gtest:STRING=58d77fa8070e8cec2dc1ed015d66b454c8d78850
+MUJOCO_DEP_VERSION_gtest:STRING=b796f7d44681514f58a683a3a71ff17c94edb0c1
 
 //Version of `lodepng` to be fetched.
 MUJOCO_DEP_VERSION_lodepng:STRING=b4ed2cd7ecf61d29076169b49199371456d4f90b
@@ -503,7 +516,7 @@ MUJOCO_DEP_VERSION_qhull:STRING=0c8fc90d2037588024d9964515c1e684f6007ecc
 MUJOCO_DEP_VERSION_tinyobjloader:STRING=1421a10d6ed9742f5b2c1766d22faa6cfbc56248
 
 //Version of `tinyxml2` to be fetched.
-MUJOCO_DEP_VERSION_tinyxml2:STRING=1dee28e51f9175a31955b9791c74c430fe13dc82
+MUJOCO_DEP_VERSION_tinyxml2:STRING=9a89766acc42ddfa9e7133c7d81a5bda108a0ade
 
 //Build binaries that require AVX instructions, if possible.
 MUJOCO_ENABLE_AVX:BOOL=ON
@@ -593,7 +606,7 @@ X11_Xau_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXau.so
 X11_Xaw_INCLUDE_PATH:PATH=X11_Xaw_INCLUDE_PATH-NOTFOUND
 
 //Path to a library.
-X11_Xaw_LIB:FILEPATH=X11_Xaw_LIB-NOTFOUND
+X11_Xaw_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXaw.so
 
 //Path to a file.
 X11_Xcomposite_INCLUDE_PATH:PATH=/usr/include
@@ -659,16 +672,16 @@ X11_Xkblib_INCLUDE_PATH:PATH=/usr/include
 X11_Xlib_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xmu_INCLUDE_PATH:PATH=X11_Xmu_INCLUDE_PATH-NOTFOUND
+X11_Xmu_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xmu_LIB:FILEPATH=X11_Xmu_LIB-NOTFOUND
+X11_Xmu_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXmu.so
 
 //Path to a file.
-X11_Xpm_INCLUDE_PATH:PATH=X11_Xpm_INCLUDE_PATH-NOTFOUND
+X11_Xpm_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xpm_LIB:FILEPATH=X11_Xpm_LIB-NOTFOUND
+X11_Xpm_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXpm.so
 
 //Path to a file.
 X11_Xrandr_INCLUDE_PATH:PATH=/usr/include
@@ -707,10 +720,10 @@ X11_Xtst_LIB:FILEPATH=X11_Xtst_LIB-NOTFOUND
 X11_Xutil_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a file.
-X11_Xv_INCLUDE_PATH:PATH=X11_Xv_INCLUDE_PATH-NOTFOUND
+X11_Xv_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xv_LIB:FILEPATH=X11_Xv_LIB-NOTFOUND
+X11_Xv_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXv.so
 
 //Path to a file.
 X11_Xxf86misc_INCLUDE_PATH:PATH=X11_Xxf86misc_INCLUDE_PATH-NOTFOUND
@@ -719,10 +732,10 @@ X11_Xxf86misc_INCLUDE_PATH:PATH=X11_Xxf86misc_INCLUDE_PATH-NOTFOUND
 X11_Xxf86misc_LIB:FILEPATH=X11_Xxf86misc_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xxf86vm_INCLUDE_PATH:PATH=X11_Xxf86vm_INCLUDE_PATH-NOTFOUND
+X11_Xxf86vm_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xxf86vm_LIB:FILEPATH=X11_Xxf86vm_LIB-NOTFOUND
+X11_Xxf86vm_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXxf86vm.so
 
 //Path to a file.
 X11_dpms_INCLUDE_PATH:PATH=/usr/include
@@ -755,10 +768,10 @@ X11_xcb_xfixes_LIB:FILEPATH=X11_xcb_xfixes_LIB-NOTFOUND
 X11_xcb_xkb_LIB:FILEPATH=X11_xcb_xkb_LIB-NOTFOUND
 
 //Path to a file.
-X11_xkbcommon_INCLUDE_PATH:PATH=X11_xkbcommon_INCLUDE_PATH-NOTFOUND
+X11_xkbcommon_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_xkbcommon_LIB:FILEPATH=X11_xkbcommon_LIB-NOTFOUND
+X11_xkbcommon_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libxkbcommon.so
 
 //Path to a file.
 X11_xkbcommon_X11_INCLUDE_PATH:PATH=X11_xkbcommon_X11_INCLUDE_PATH-NOTFOUND
@@ -794,10 +807,10 @@ absl_bad_variant_access_LIB_DEPENDS:STATIC=general;absl::raw_logging_internal;
 absl_base_LIB_DEPENDS:STATIC=general;absl::log_severity;general;absl::raw_logging_internal;general;absl::spinlock_wait;general;absl::type_traits;
 
 //Dependencies for the target
-absl_cord_LIB_DEPENDS:STATIC=general;absl::base;general;absl::cord_internal;general;absl::cordz_functions;general;absl::cordz_info;general;absl::optional;general;absl::raw_logging_internal;general;absl::span;general;absl::strings;
+absl_cord_LIB_DEPENDS:STATIC=general;absl::base;general;absl::cord_internal;general;absl::cordz_functions;general;absl::cordz_info;general;absl::crc_cord_state;general;absl::optional;general;absl::raw_logging_internal;general;absl::span;general;absl::strings;
 
 //Dependencies for the target
-absl_cord_internal_LIB_DEPENDS:STATIC=general;absl::raw_logging_internal;general;absl::strings;general;absl::throw_delegate;
+absl_cord_internal_LIB_DEPENDS:STATIC=general;absl::crc_cord_state;general;absl::raw_logging_internal;general;absl::strings;general;absl::throw_delegate;
 
 //Dependencies for the target
 absl_cordz_functions_LIB_DEPENDS:STATIC=general;absl::exponential_biased;general;absl::raw_logging_internal;
@@ -812,10 +825,25 @@ absl_cordz_info_LIB_DEPENDS:STATIC=general;absl::base;general;absl::cord_interna
 absl_cordz_sample_token_LIB_DEPENDS:STATIC=general;absl::cordz_handle;general;absl::cordz_info;
 
 //Dependencies for the target
+absl_crc32c_LIB_DEPENDS:STATIC=general;absl::crc_cpu_detect;general;absl::crc_internal;general;absl::non_temporal_memcpy;general;absl::strings;
+
+//Dependencies for the target
+absl_crc_cord_state_LIB_DEPENDS:STATIC=general;absl::crc32c;general;absl::strings;
+
+//Dependencies for the target
+absl_crc_cpu_detect_LIB_DEPENDS:STATIC=general;absl::base;
+
+//Dependencies for the target
+absl_crc_internal_LIB_DEPENDS:STATIC=general;absl::crc_cpu_detect;general;absl::base;general;absl::raw_logging_internal;general;absl::memory;general;absl::bits;
+
+//Dependencies for the target
 absl_debugging_internal_LIB_DEPENDS:STATIC=general;absl::raw_logging_internal;
 
 //Dependencies for the target
 absl_demangle_internal_LIB_DEPENDS:STATIC=general;absl::base;
+
+//Dependencies for the target
+absl_die_if_null_LIB_DEPENDS:STATIC=general;absl::log;general;absl::strings;
 
 //Dependencies for the target
 absl_examine_stack_LIB_DEPENDS:STATIC=general;absl::stacktrace;general;absl::symbolize;general;absl::raw_logging_internal;
@@ -860,16 +888,52 @@ absl_flags_usage_internal_LIB_DEPENDS:STATIC=general;absl::flags_config;general;
 absl_graphcycles_internal_LIB_DEPENDS:STATIC=general;absl::base;general;absl::malloc_internal;general;absl::raw_logging_internal;
 
 //Dependencies for the target
-absl_hash_LIB_DEPENDS:STATIC=general;absl::city;general;absl::meta;general;absl::int128;general;absl::strings;general;absl::optional;general;absl::variant;general;absl::utility;general;absl::low_level_hash;
+absl_hash_LIB_DEPENDS:STATIC=general;absl::bits;general;absl::city;general;absl::meta;general;absl::int128;general;absl::strings;general;absl::optional;general;absl::variant;general;absl::utility;general;absl::low_level_hash;
 
 //Dependencies for the target
 absl_hashtablez_sampler_LIB_DEPENDS:STATIC=general;absl::base;general;absl::exponential_biased;general;absl::sample_recorder;general;absl::synchronization;
 
 //Dependencies for the target
+absl_log_entry_LIB_DEPENDS:STATIC=general;absl::log_severity;general;absl::span;general;absl::strings;general;absl::time;
+
+//Dependencies for the target
+absl_log_flags_LIB_DEPENDS:STATIC=general;absl::log_globals;general;absl::log_severity;general;absl::flags;general;absl::flags_marshalling;general;absl::strings;
+
+//Dependencies for the target
+absl_log_globals_LIB_DEPENDS:STATIC=general;absl::hash;general;absl::log_severity;general;absl::strings;
+
+//Dependencies for the target
+absl_log_initialize_LIB_DEPENDS:STATIC=general;absl::log_globals;general;absl::log_internal_globals;general;absl::time;
+
+//Dependencies for the target
+absl_log_internal_check_op_LIB_DEPENDS:STATIC=general;absl::log_internal_nullguard;general;absl::log_internal_nullstream;general;absl::log_internal_strip;general;absl::strings;
+
+//Dependencies for the target
+absl_log_internal_conditions_LIB_DEPENDS:STATIC=general;absl::base;general;absl::log_internal_voidify;
+
+//Dependencies for the target
+absl_log_internal_format_LIB_DEPENDS:STATIC=general;absl::log_internal_append_truncated;general;absl::log_internal_globals;general;absl::log_severity;general;absl::strings;general;absl::str_format;general;absl::time;general;absl::span;
+
+//Dependencies for the target
+absl_log_internal_globals_LIB_DEPENDS:STATIC=general;absl::log_severity;general;absl::raw_logging_internal;general;absl::strings;general;absl::time;
+
+//Dependencies for the target
+absl_log_internal_log_sink_set_LIB_DEPENDS:STATIC=general;absl::base;general;absl::log_internal_globals;general;absl::log_globals;general;absl::log_entry;general;absl::log_severity;general;absl::log_sink;general;absl::raw_logging_internal;general;absl::synchronization;general;absl::span;general;absl::strings;
+
+//Dependencies for the target
+absl_log_internal_message_LIB_DEPENDS:STATIC=general;absl::base;general;absl::examine_stack;general;absl::log_internal_append_truncated;general;absl::log_internal_format;general;absl::log_internal_globals;general;absl::log_internal_proto;general;absl::log_internal_log_sink_set;general;absl::log_internal_nullguard;general;absl::log_globals;general;absl::log_entry;general;absl::log_severity;general;absl::log_sink;general;absl::log_sink_registry;general;absl::memory;general;absl::raw_logging_internal;general;absl::strings;general;absl::strerror;general;absl::time;general;absl::span;
+
+//Dependencies for the target
+absl_log_internal_proto_LIB_DEPENDS:STATIC=general;absl::base;general;absl::strings;general;absl::span;
+
+//Dependencies for the target
 absl_log_severity_LIB_DEPENDS:STATIC=general;absl::core_headers;
 
 //Dependencies for the target
-absl_low_level_hash_LIB_DEPENDS:STATIC=general;absl::bits;general;absl::int128;
+absl_log_sink_LIB_DEPENDS:STATIC=general;absl::log_entry;
+
+//Dependencies for the target
+absl_low_level_hash_LIB_DEPENDS:STATIC=general;absl::int128;
 
 //Dependencies for the target
 absl_malloc_internal_LIB_DEPENDS:STATIC=general;absl::base;general;absl::base_internal;general;absl::raw_logging_internal;
@@ -905,7 +969,7 @@ absl_random_internal_seed_material_LIB_DEPENDS:STATIC=general;absl::optional;gen
 absl_random_seed_sequences_LIB_DEPENDS:STATIC=general;absl::random_internal_pool_urbg;general;absl::random_internal_salted_seed_seq;general;absl::random_internal_seed_material;general;absl::random_seed_gen_exception;general;absl::span;
 
 //Dependencies for the target
-absl_raw_hash_set_LIB_DEPENDS:STATIC=general;absl::bits;general;absl::memory;general;absl::meta;general;absl::optional;general;absl::utility;general;absl::hashtablez_sampler;
+absl_raw_hash_set_LIB_DEPENDS:STATIC=general;absl::bits;general;absl::hashtablez_sampler;general;absl::memory;general;absl::meta;general;absl::optional;general;absl::raw_logging_internal;general;absl::utility;
 
 //Dependencies for the target
 absl_raw_logging_internal_LIB_DEPENDS:STATIC=general;absl::config;general;absl::core_headers;general;absl::log_severity;
@@ -917,7 +981,7 @@ absl_scoped_set_env_LIB_DEPENDS:STATIC=general;absl::raw_logging_internal;
 absl_spinlock_wait_LIB_DEPENDS:STATIC=general;absl::base_internal;general;absl::core_headers;
 
 //Dependencies for the target
-absl_stacktrace_LIB_DEPENDS:STATIC=general;absl::debugging_internal;
+absl_stacktrace_LIB_DEPENDS:STATIC=general;absl::debugging_internal;general;absl::raw_logging_internal;
 
 //Dependencies for the target
 absl_status_LIB_DEPENDS:STATIC=general;absl::cord;general;absl::optional;general;absl::raw_logging_internal;general;absl::stacktrace;general;absl::str_format;general;absl::strerror;general;absl::strings;general;absl::symbolize;
@@ -1090,6 +1154,8 @@ tinyxml2_SOURCE_DIR:STATIC=/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc
 # INTERNAL cache entries
 ########################
 
+//Test ABSL_INTERNAL_AT_LEAST_CXX17
+ABSL_INTERNAL_AT_LEAST_CXX17:INTERNAL=1
 //Test CAN_BUILD_AVX
 CAN_BUILD_AVX:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
@@ -1244,7 +1310,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=48
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=50
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1300,7 +1366,7 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding Python
-FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.6()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/home/leggedrobot/anaconda3/bin/python3.9][cfound components: Interpreter ][v3.9.13()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding X11
@@ -1575,10 +1641,10 @@ X11_xkbfile_LIB-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 //Path to a program.
-_Python_EXECUTABLE:INTERNAL=/usr/bin/python3.10
+_Python_EXECUTABLE:INTERNAL=/home/leggedrobot/anaconda3/bin/python3.9
 //Python Properties
-_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;6;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
-_Python_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;13;64;;cpython-39-x86_64-linux-gnu;/home/leggedrobot/anaconda3/lib/python3.9;/home/leggedrobot/anaconda3/lib/python3.9;/home/leggedrobot/anaconda3/lib/python3.9/site-packages;/home/leggedrobot/anaconda3/lib/python3.9/site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=567ab59b1e993b1b5c5b01033319e7f3
 __pkg_config_arguments_PKG_FONTCONFIG:INTERNAL=QUIET;fontconfig
 __pkg_config_checked_PKG_FONTCONFIG:INTERNAL=1
 cmake_package_name:INTERNAL=GTest

@@ -108,7 +108,7 @@ bin/sampling_planner_test: lib/libabsl_random_internal_seed_material.a
 bin/sampling_planner_test: lib/libabsl_bad_optional_access.a
 bin/sampling_planner_test: lib/libabsl_random_seed_gen_exception.a
 bin/sampling_planner_test: lib/libthreadpool.a
-bin/sampling_planner_test: lib/libmujoco.so.2.3.1
+bin/sampling_planner_test: lib/libmujoco.so.2.3.2
 bin/sampling_planner_test: lib/libabsl_strings.a
 bin/sampling_planner_test: lib/libabsl_strings_internal.a
 bin/sampling_planner_test: lib/libabsl_base.a

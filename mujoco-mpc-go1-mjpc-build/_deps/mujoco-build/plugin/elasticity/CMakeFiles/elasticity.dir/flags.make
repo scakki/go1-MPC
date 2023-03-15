@@ -6,5 +6,5 @@ CXX_DEFINES = -Delasticity_EXPORTS -DmjUSEPLATFORMSIMD
 
 CXX_INCLUDES = -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/plugin/elasticity/../.. -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/plugin/elasticity/../../src -I/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Wno-int-in-bool-context -Wno-maybe-uninitialized -Wno-sign-compare -Wno-stringop-overflow -Wno-stringop-truncation -std=c++17
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Werror -Wall -Wimplicit-fallthrough -Wunused -Wno-int-in-bool-context -Wno-sign-compare -Wno-unknown-pragmas -Wimplicit-fallthrough=5 -Wno-maybe-uninitialized -std=c++17
 

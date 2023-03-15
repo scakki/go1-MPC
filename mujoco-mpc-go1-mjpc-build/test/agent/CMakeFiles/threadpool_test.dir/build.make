@@ -94,7 +94,7 @@ bin/threadpool_test: test/agent/CMakeFiles/threadpool_test.dir/threadpool_test.c
 bin/threadpool_test: test/agent/CMakeFiles/threadpool_test.dir/build.make
 bin/threadpool_test: lib/libgtest_main.a
 bin/threadpool_test: lib/libmjpc.a
-bin/threadpool_test: lib/libmujoco.so.2.3.1
+bin/threadpool_test: lib/libmujoco.so.2.3.2
 bin/threadpool_test: lib/libthreadpool.a
 bin/threadpool_test: lib/libgmock.a
 bin/threadpool_test: lib/libabsl_random_distributions.a

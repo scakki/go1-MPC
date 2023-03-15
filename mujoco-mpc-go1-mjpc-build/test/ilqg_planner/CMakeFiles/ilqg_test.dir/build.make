@@ -108,7 +108,7 @@ bin/ilqg_test: lib/libabsl_random_internal_seed_material.a
 bin/ilqg_test: lib/libabsl_bad_optional_access.a
 bin/ilqg_test: lib/libabsl_random_seed_gen_exception.a
 bin/ilqg_test: lib/libthreadpool.a
-bin/ilqg_test: lib/libmujoco.so.2.3.1
+bin/ilqg_test: lib/libmujoco.so.2.3.2
 bin/ilqg_test: lib/libabsl_strings.a
 bin/ilqg_test: lib/libabsl_strings_internal.a
 bin/ilqg_test: lib/libabsl_base.a

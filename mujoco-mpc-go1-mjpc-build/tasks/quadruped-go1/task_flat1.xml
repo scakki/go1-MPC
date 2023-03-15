@@ -36,24 +36,24 @@
     <user name="Velocity" dim="2" user="7 1 0 5 .2 4" />
     <user name="Heading" dim="2" user="0 1 0 5" />
     <user name="Control" dim="12" user="0 0.2 0.0 1.0" />
-    <!framepos      name="trace0" objtype="body" objname="trunk"/>
-    <!subtreecom    name="torso_subtreecom" body="trunk"/>
+    <framepos      name="trace0" objtype="body" objname="trunk"/>
+    <subtreecom    name="torso_subtreecom" body="trunk"/>
     <subtreelinvel name="torso_subtreelinvel" body="trunk"/>
     <framezaxis    name="torso_up" objtype="xbody" objname="trunk"/>
     <framexaxis    name="torso_forward" objtype="xbody" objname="trunk"/>
-    <!framepos      name="position" objtype="body" objname="trunk"/>
-    <!gyro          name="gyro" site="torso"/>
-    <!framepos      name="FR" objtype="site" objname="FR"/>
-    <!framepos      name="FL" objtype="site" objname="FL"/>
-    <!framepos      name="RR" objtype="site" objname="RR"/>
-    <!framepos      name="RL" objtype="site" objname="RL"/>
+    <framepos      name="position" objtype="body" objname="trunk"/>
+    <gyro          name="gyro" site="torso"/>
+    <framepos      name="FR" objtype="site" objname="FR"/>
+    <framepos      name="FL" objtype="site" objname="FL"/>
+    <framepos      name="RR" objtype="site" objname="RR"/>
+    <framepos      name="RL" objtype="site" objname="RL"/>
     <framelinvel   name="FRvel" objtype="site" objname="FR"/>
     <framelinvel   name="FLvel" objtype="site" objname="FL"/>
     <framelinvel   name="RRvel" objtype="site" objname="RR"/>
     <framelinvel   name="RLvel" objtype="site" objname="RL"/>
-    <!framepos      name="FRshoulder" objtype="xbody" objname="FR_thigh"/>
-    <!framepos      name="FLshoulder" objtype="xbody" objname="FL_thigh"/>
-    <!framepos      name="RLshoulder" objtype="xbody" objname="RL_thigh"/>
+    <framepos      name="FRshoulder" objtype="xbody" objname="FR_thigh"/>
+    <framepos      name="FLshoulder" objtype="xbody" objname="FL_thigh"/>
+    <framepos      name="RLshoulder" objtype="xbody" objname="RL_thigh"/>
   </sensor>
   <!sensor>
 

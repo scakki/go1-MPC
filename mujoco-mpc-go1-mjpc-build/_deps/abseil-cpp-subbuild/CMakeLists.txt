@@ -21,7 +21,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(abseil-cpp-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/abseil/abseil-cpp.git" "GIT_TAG" "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/abseil/abseil-cpp.git" "GIT_TAG" "78be63686ba732b25052be15f8d6dee891c05749" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
                     SOURCE_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src"
                     BINARY_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-build"
                     CONFIGURE_COMMAND   ""

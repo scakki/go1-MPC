@@ -213,7 +213,6 @@ _deps/abseil-cpp-build/absl/base/CMakeFiles/absl_log_severity.dir/log_severity.c
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/cstddef \
   _deps/abseil-cpp-src/absl/base/options.h \
-  /usr/include/c++/11/ciso646 \
   _deps/abseil-cpp-src/absl/base/policy_checks.h
 
 
@@ -270,8 +269,6 @@ _deps/abseil-cpp-src/absl/base/options.h:
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/stdio.h:
-
-/usr/include/c++/11/ciso646:
 
 /usr/include/c++/11/cstdio:
 

@@ -21,7 +21,7 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(tinyxml2-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/leethomason/tinyxml2.git" "GIT_TAG" "1dee28e51f9175a31955b9791c74c430fe13dc82" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/leethomason/tinyxml2.git" "GIT_TAG" "9a89766acc42ddfa9e7133c7d81a5bda108a0ade" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
                     SOURCE_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyxml2-src"
                     BINARY_DIR          "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/tinyxml2-build"
                     CONFIGURE_COMMAND   ""

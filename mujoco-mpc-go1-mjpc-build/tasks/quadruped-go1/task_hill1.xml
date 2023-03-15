@@ -14,9 +14,9 @@
     <numeric name="residual_Height Goal" data="0.25" />
   </custom>
 
-  <asset>
-    <mesh name="inflated_trunk" scale="1.2 1.2 1.2" file="trunk.obj"/>
-  </asset>
+  <!asset>
+    <!mesh name="inflated_trunk" scale="1.2 1.2 1.2" file="trunk.obj"/>
+  <!/asset>
 
   <worldbody>
     <light pos="0 0 1.5" dir="0 0 -1" diffuse="0.7 0.7 0.7" specular="0.3 0.3 0.3"
@@ -27,8 +27,8 @@
     <geom name="floor" size="50 50 0.05" pos="0 0 -0.01" type="plane" material="blue_grid"/>
   </worldbody>
 
-  <include file="a1.xml" />
-  <include file="assets/fractal.xml" />
+  <include file="go1.xml" />
+  <!include file="assets/fractal.xml" />
 
   <sensor>
     <user name="Stand" dim="1" user="0 1.0 0.0 10.0" />

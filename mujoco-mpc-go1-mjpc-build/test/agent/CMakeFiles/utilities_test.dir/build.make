@@ -108,7 +108,7 @@ bin/utilities_test: lib/libabsl_random_internal_platform.a
 bin/utilities_test: lib/libabsl_random_internal_seed_material.a
 bin/utilities_test: lib/libabsl_bad_optional_access.a
 bin/utilities_test: lib/libabsl_random_seed_gen_exception.a
-bin/utilities_test: lib/libmujoco.so.2.3.1
+bin/utilities_test: lib/libmujoco.so.2.3.2
 bin/utilities_test: lib/libabsl_strings.a
 bin/utilities_test: lib/libabsl_strings_internal.a
 bin/utilities_test: lib/libabsl_base.a

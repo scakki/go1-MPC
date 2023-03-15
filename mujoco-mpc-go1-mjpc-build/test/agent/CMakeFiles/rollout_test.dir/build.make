@@ -108,7 +108,7 @@ bin/rollout_test: lib/libabsl_random_internal_seed_material.a
 bin/rollout_test: lib/libabsl_bad_optional_access.a
 bin/rollout_test: lib/libabsl_random_seed_gen_exception.a
 bin/rollout_test: lib/libthreadpool.a
-bin/rollout_test: lib/libmujoco.so.2.3.1
+bin/rollout_test: lib/libmujoco.so.2.3.2
 bin/rollout_test: lib/libabsl_strings.a
 bin/rollout_test: lib/libabsl_strings_internal.a
 bin/rollout_test: lib/libabsl_base.a

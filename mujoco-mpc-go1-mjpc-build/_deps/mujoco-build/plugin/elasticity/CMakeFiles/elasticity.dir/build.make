@@ -124,7 +124,7 @@ lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/build.make
-lib/libelasticity.so: lib/libmujoco.so.2.3.1
+lib/libelasticity.so: lib/libmujoco.so.2.3.2
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../../../../lib/libelasticity.so"
 	cd /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-build/plugin/elasticity && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elasticity.dir/link.txt --verbose=$(VERBOSE)

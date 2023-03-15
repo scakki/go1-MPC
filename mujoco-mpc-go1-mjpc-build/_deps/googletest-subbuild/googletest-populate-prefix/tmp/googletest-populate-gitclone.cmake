@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout 58d77fa8070e8cec2dc1ed015d66b454c8d78850 --
+  COMMAND "/usr/bin/git"  checkout b796f7d44681514f58a683a3a71ff17c94edb0c1 --
   WORKING_DIRECTORY "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/googletest-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: '58d77fa8070e8cec2dc1ed015d66b454c8d78850'")
+  message(FATAL_ERROR "Failed to checkout tag: 'b796f7d44681514f58a683a3a71ff17c94edb0c1'")
 endif()
 
 set(init_submodules TRUE)

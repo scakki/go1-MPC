@@ -228,35 +228,49 @@ test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/leggedrobot/Document
   _deps/mujoco-src/include/mujoco/mjui.h \
   _deps/googletest-src/googletest/include/gtest/gtest.h \
   /usr/include/c++/11/cstddef \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets.h \
   /usr/include/c++/11/cwctype \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
   /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/bits/basic_ios.h \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
   /usr/include/c++/11/bits/shared_ptr.h \
   /usr/include/c++/11/bits/shared_ptr_base.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
@@ -299,26 +313,20 @@ test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/leggedrobot/Document
   /usr/include/c++/11/bits/uses_allocator_args.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/node_handle.h \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/c++/11/bits/erase_if.h \
   _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
   _deps/googletest-src/googletest/include/gtest/gtest-message.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/bits/sstream.tcc \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
   /usr/include/c++/11/iostream \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -367,9 +375,7 @@ test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/leggedrobot/Document
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/bits/hashtable.h \
   /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
   /usr/include/x86_64-linux-gnu/sys/wait.h \
   /usr/include/signal.h \
@@ -395,15 +401,9 @@ test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/leggedrobot/Document
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/set \
-  /usr/include/c++/11/bits/stl_set.h \
-  /usr/include/c++/11/bits/stl_multiset.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
   _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
@@ -442,10 +442,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
-/usr/include/c++/11/bits/stl_multiset.h:
-
-/usr/include/c++/11/set:
-
 /usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/c++/11/bits/stl_map.h:
@@ -479,10 +475,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
@@ -528,37 +520,25 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 
 /usr/include/linux/stat.h:
 
-/usr/include/c++/11/bits/stl_set.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
-/usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
-/usr/include/libintl.h:
-
-/usr/include/c++/11/cxxabi.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/c++/11/istream:
-
 _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/c++/11/set:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -571,10 +551,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 /usr/include/c++/11/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
@@ -620,6 +596,30 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 
 /usr/include/c++/11/bits/refwrap.h:
 
+/usr/include/c++/11/bit:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
+/usr/include/c++/11/memory:
+
+/usr/include/c++/11/bits/istream.tcc:
+
+/usr/include/c++/11/istream:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
@@ -629,8 +629,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 /usr/include/c++/11/cstdlib:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/11/bit:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
@@ -650,15 +648,11 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/c++/11/bits/sstream.tcc:
-
 /usr/include/c++/11/climits:
 
+/usr/include/c++/11/bits/sstream.tcc:
+
 /usr/include/c++/11/new:
-
-/usr/include/c++/11/locale:
-
-/usr/include/ctype.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
@@ -697,10 +691,6 @@ _deps/mujoco-src/include/mujoco/mjexport.h:
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/c++/11/clocale:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
-
-/usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
@@ -758,6 +748,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
+/usr/include/libintl.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -786,6 +778,12 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /usr/include/c++/11/ctime:
 
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -795,6 +793,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/c++/11/ext/atomicity.h:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -816,9 +816,9 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/c++/11/iomanip:
-
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
+
+/usr/include/c++/11/iomanip:
 
 /usr/include/c++/11/cctype:
 
@@ -839,6 +839,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 /usr/include/c++/11/functional:
 
 /usr/include/linux/errno.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/locale:
 
 /usr/include/c++/11/condition_variable:
 
@@ -892,6 +896,10 @@ _deps/mujoco-src/include/mujoco/mjrender.h:
 
 /usr/include/wchar.h:
 
+/usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
 _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
@@ -944,10 +952,6 @@ _deps/mujoco-src/include/mujoco/mjmodel.h:
 
 /usr/include/endian.h:
 
-/usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/states/state.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/debug/assertions.h:
@@ -996,9 +1000,9 @@ _deps/mujoco-src/include/mujoco/mjmodel.h:
 
 /usr/include/c++/11/system_error:
 
-/usr/include/c++/11/utility:
-
 /usr/include/c++/11/ios:
+
+/usr/include/c++/11/utility:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
@@ -1098,6 +1102,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
 /usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
@@ -1117,10 +1125,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 
 /usr/include/c++/11/vector:
-
-/usr/include/c++/11/bits/max_size_type.h:
-
-/usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
@@ -1154,9 +1158,9 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/c++/11/bits/node_handle.h:
-
 /usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -1218,19 +1222,25 @@ _deps/mujoco-src/include/mujoco/mjvisualize.h:
 
 _deps/mujoco-src/include/mujoco/mjui.h:
 
+/usr/include/c++/11/bits/locale_conv.h:
+
 /usr/include/c++/11/stdexcept:
 
 _deps/googletest-src/googletest/include/gtest/gtest.h:
 
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+/usr/include/linux/types.h:
 
-/usr/include/c++/11/memory:
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/states/state.h:
 
-/usr/include/c++/11/bits/unique_lock.h:
+/usr/include/c++/11/bits/locale_facets_nonio.h:
 
-/usr/include/c++/11/bits/uses_allocator.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/cxxabi.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/include/c++/11/any:
 
@@ -1246,16 +1256,6 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 
 /usr/include/c++/11/array:
 
-/usr/include/c++/11/bits/uniform_int_dist.h:
+/usr/include/c++/11/bits/unique_lock.h:
 
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
+/usr/include/c++/11/bits/uses_allocator.h:

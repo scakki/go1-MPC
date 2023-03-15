@@ -7,3 +7,10 @@ cmake -S ../ -B .
 make -j 8
 
 ./mjpc
+
+
+
+RANGES
+	hip = -45.99 to 45.99 degrees 	(Acc to manual = -60 to 60)
+	thigh = -60 to 240 degrees 	(Acc to manual = -38 to 170)
+	calf = -154.5 to -52.5 degrees 	(Acc to manual = -156 to -48)

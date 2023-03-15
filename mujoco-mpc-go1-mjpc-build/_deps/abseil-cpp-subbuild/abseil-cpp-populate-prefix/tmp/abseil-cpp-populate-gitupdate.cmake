@@ -27,7 +27,7 @@ endif()
 
 
 execute_process(
-  COMMAND "/usr/bin/git" show-ref "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0"
+  COMMAND "/usr/bin/git" show-ref "78be63686ba732b25052be15f8d6dee891c05749"
   WORKING_DIRECTORY "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src"
   OUTPUT_VARIABLE show_ref_output
 )
@@ -35,19 +35,19 @@ if(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/remotes/")
   # Given a full remote/branch-name and we know about it already. Since
   # branches can move around, we always have to fetch.
   set(fetch_required YES)
-  set(checkout_name "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0")
+  set(checkout_name "78be63686ba732b25052be15f8d6dee891c05749")
 
 elseif(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/tags/")
   # Given a tag name that we already know about. We don't know if the tag we
   # have matches the remote though (tags can move), so we should fetch.
   set(fetch_required YES)
-  set(checkout_name "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0")
+  set(checkout_name "78be63686ba732b25052be15f8d6dee891c05749")
 
   # Special case to preserve backward compatibility: if we are already at the
   # same commit as the tag we hold locally, don't do a fetch and assume the tag
   # hasn't moved on the remote.
   # FIXME: We should provide an option to always fetch for this case
-  get_hash_for_ref("8c0b94e793a66495e0b1f34a5eb26bd7dc672db0" tag_sha error_msg)
+  get_hash_for_ref("78be63686ba732b25052be15f8d6dee891c05749" tag_sha error_msg)
   if(tag_sha STREQUAL head_sha)
     message(VERBOSE "Already at requested tag: ${tag_sha}")
     return()
@@ -59,10 +59,10 @@ elseif(show_ref_output MATCHES "^[a-z0-9]+[ \\t]+refs/heads/")
   # different branch. It isn't safe to use a bare branch name without the
   # remote, so do a fetch and replace the ref with one that includes the remote.
   set(fetch_required YES)
-  set(checkout_name "origin/8c0b94e793a66495e0b1f34a5eb26bd7dc672db0")
+  set(checkout_name "origin/78be63686ba732b25052be15f8d6dee891c05749")
 
 else()
-  get_hash_for_ref("8c0b94e793a66495e0b1f34a5eb26bd7dc672db0" tag_sha error_msg)
+  get_hash_for_ref("78be63686ba732b25052be15f8d6dee891c05749" tag_sha error_msg)
   if(tag_sha STREQUAL head_sha)
     # Have the right commit checked out already
     message(VERBOSE "Already at requested ref: ${tag_sha}")
@@ -74,7 +74,7 @@ else()
     # because it can be confusing for users to see a failed git command.
     # That failure is being handled here, so it isn't an error.
     set(fetch_required YES)
-    set(checkout_name "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0")
+    set(checkout_name "78be63686ba732b25052be15f8d6dee891c05749")
     if(NOT error_msg STREQUAL "")
       message(VERBOSE "${error_msg}")
     endif()
@@ -84,7 +84,7 @@ else()
     # (otherwise it would have been handled further above), but we don't
     # have that commit checked out yet
     set(fetch_required NO)
-    set(checkout_name "8c0b94e793a66495e0b1f34a5eb26bd7dc672db0")
+    set(checkout_name "78be63686ba732b25052be15f8d6dee891c05749")
     if(NOT error_msg STREQUAL "")
       message(WARNING "${error_msg}")
     endif()

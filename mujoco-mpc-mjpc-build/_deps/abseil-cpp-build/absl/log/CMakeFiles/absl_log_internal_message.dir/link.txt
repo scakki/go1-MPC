@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../lib/libabsl_log_internal_message.a CMakeFiles/absl_log_internal_message.dir/internal/log_message.cc.o
+/usr/bin/ranlib ../../../../lib/libabsl_log_internal_message.a
