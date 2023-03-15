@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libload.a CMakeFiles/load.dir/load.cc.o
-/usr/bin/ranlib ../lib/libload.a

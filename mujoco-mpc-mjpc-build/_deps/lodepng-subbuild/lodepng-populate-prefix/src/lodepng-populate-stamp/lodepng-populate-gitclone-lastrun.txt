@@ -1,3 +1,0 @@
-repository='https://github.com/lvandeve/lodepng.git'
-module=''
-tag='origin'

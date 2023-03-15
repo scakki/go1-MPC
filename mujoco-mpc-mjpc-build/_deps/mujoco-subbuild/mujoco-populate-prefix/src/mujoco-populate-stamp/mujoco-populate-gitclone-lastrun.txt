@@ -1,3 +1,0 @@
-repository='https://github.com/deepmind/mujoco.git'
-module=''
-tag='origin'
