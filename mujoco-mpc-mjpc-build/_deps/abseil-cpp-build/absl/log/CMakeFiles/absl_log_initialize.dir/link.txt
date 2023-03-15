@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/libabsl_log_initialize.a CMakeFiles/absl_log_initialize.dir/initialize.cc.o
-/usr/bin/ranlib ../../../../lib/libabsl_log_initialize.a

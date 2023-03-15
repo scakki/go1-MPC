@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -O3 -DNDEBUG -fuse-ld=gold -Wl,--gc-sections -shared -Wl,-soname,libelasticity.so -o ../../../../lib/libelasticity.so CMakeFiles/elasticity.dir/cable.cc.o CMakeFiles/elasticity.dir/elasticity.cc.o CMakeFiles/elasticity.dir/solid.cc.o  -Wl,-rpath,/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-mjpc-build/lib ../../../../lib/libmujoco.so.2.3.2 
