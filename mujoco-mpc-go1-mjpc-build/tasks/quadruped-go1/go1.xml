@@ -7,21 +7,30 @@
         <geom contype="1" conaffinity="1" friction="0.6 0.3 0.3" rgba="0.5 0.6 0.7 1" margin="0.001" group="0"/>
 
         <light castshadow="false" diffuse="1 1 1"/>
-        <!--<position kp="50" ctrlrange="-33.5 33.5" forcelimited="true" ctrllimited="true" forcerange="-33.5 33.5"/>-->
         <position kp="50" forcelimited="true" ctrllimited="true" forcerange="-33.5 33.5"/>
         <camera fovy="60"/>
-        <joint damping="2" armature="0.01" frictionloss="0.2" /> //damping was 0.01
+        <joint damping="2" armature="0.01" frictionloss="0.2" />
+        <!--The damping value has been incresed from 0.01 to 2 in order to reduce the unstabilty and eratic movement of the robot-->
         <default class="hip">
-            <joint axis="1 0 0" damping="1" range="-1.0472 1.0472"/> //range values are taken from the manual for hip, thigh and, calf.
+            <joint axis="1 0 0" damping="1" range="-1.0472 1.0472"/>
             <position ctrlrange="-1.0472 1.0472"/> 
+            <!--Firstly, all the range values have been removed from worldbody description-->
+            <!--Individual control range values have been assigned to each joint unlike in unitree Go1 xml-->
+            <!--Also the range and control range values have been changed to the actual values of the Go1 from the Go1 manual-->
+            <!--Here ref = 0; range = (-60 to 60 degrees) (equivalent range value has been used here); and control range = (-60 to 60 degrees)-->
         </default>
         <default class="thigh">
-            <joint range="-1.563225 2.06706" ref="-0.9"/> //ref="0"
+            <joint range="-1.563225 2.06706" ref="-0.9"/>
             <position ctrlrange="-1.563225 2.06706"/>
+            <!--Here ref = 0.9; range = (-38 to 170 degrees); and control range = (-38 to 170 degrees)-->
+            <!--If observed closely, range (-38 to 170 degrees) should be equal to (-0.663225 to 2.96706 radians)-->
+            <!--The range used is (-1.563225 2.06706), which can be obtained by adding the ref value to the upper and lower limit of the actual range in radians-->
+            <!--ctrlrange value is always the same as range-->
         </default>
         <default class="calf">
-            <joint range="-0.92271 0.962242" ref="1.8"/> //ref="-0.75"
+            <joint range="-0.92271 0.962242" ref="1.8"/>
             <position ctrlrange="-0.92271 0.962242"/>
+            <!--Similar to above, the range used is (-0.92271 0.962242), which can be obtained by adding the ref value to the upper and lower limit of the actual range in radians-->
         </default>
     
     </default>
@@ -215,3 +224,5 @@
     
     <!/sensor>
 </mujoco>
+
+<!--Mujoco MPC A1.xml has been refered to for this file-->
