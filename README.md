@@ -1,4 +1,4 @@
-# go1-ws1
+# go1-MPC
 
 All testing and changes are done in "Trial" branch.
 
