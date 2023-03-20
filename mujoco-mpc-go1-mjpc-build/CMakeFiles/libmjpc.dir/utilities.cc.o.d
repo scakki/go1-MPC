@@ -1,7 +1,7 @@
 CMakeFiles/libmjpc.dir/utilities.cc.o: \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/utilities.cc \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/utilities.cc \
  /usr/include/stdc-predef.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/utilities.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/utilities.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -217,8 +217,8 @@ CMakeFiles/libmjpc.dir/utilities.cc.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/optional \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mujoco.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mujoco.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjexport.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/math.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -243,37 +243,37 @@ CMakeFiles/libmjpc.dir/utilities.cc.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjdata.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjrender.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjui.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjrender.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/include/mujoco/mjui.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/str_cat.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/port.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/attributes.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/config.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/str_cat.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/port.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/attributes.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/config.h \
  /usr/include/c++/11/cstddef \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/options.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/policy_checks.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/optimization.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/options.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/policy_checks.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/optimization.h \
  /usr/include/assert.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/internal/has_absl_stringify.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/string_view.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/internal/has_absl_stringify.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/string_view.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_util.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/cassert \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/throw_delegate.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/macros.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/internal/stringify_sink.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/numbers.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/throw_delegate.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/macros.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/internal/stringify_sink.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/strings/numbers.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
@@ -282,14 +282,14 @@ CMakeFiles/libmjpc.dir/utilities.cc.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
  /usr/include/c++/11/ctime \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/endian.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/casts.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/identity.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/meta/type_traits.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/unaligned_access.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/bits.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/internal/bits.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/int128.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/int128_have_intrinsic.inc \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/array_safety.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/endian.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/casts.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/identity.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/meta/type_traits.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/base/internal/unaligned_access.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/bits.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/internal/bits.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/int128.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/numeric/int128_have_intrinsic.inc \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/array_safety.h \
  /usr/include/c++/11/cstdarg

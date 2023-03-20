@@ -1,8 +1,8 @@
 CMakeFiles/mjpc.dir/glfw_dispatch.cc.o: \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/glfw_dispatch.cc \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/glfw_dispatch.cc \
  /usr/include/stdc-predef.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/glfw_dispatch.h \
- /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/include/GLFW/glfw3.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/glfw_dispatch.h \
+ /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

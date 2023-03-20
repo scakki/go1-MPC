@@ -1,4 +1,4 @@
-# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/debugging
+# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/debugging
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

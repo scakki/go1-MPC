@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/_deps/googletest-src/googletest/src/gtest-all.cc" "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
+  "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/googletest-src/googletest/src/gtest-all.cc" "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" "gcc" "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

@@ -1,1 +1,1 @@
-/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/qhullp.dir/src/qhull/unix.c.o -o ../../bin/qhullp  -Wl,-rpath,/home/leggedrobot/Documents/GitHub/go1-ws1/mujoco-mpc-go1-mjpc-build/lib ../../lib/libqhull_p.so.8.1-alpha1 -lm 
+/usr/bin/cc -O3 -DNDEBUG -rdynamic CMakeFiles/qhullp.dir/src/qhull/unix.c.o -o ../../bin/qhullp  -Wl,-rpath,/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/lib ../../lib/libqhull_p.so.8.1-alpha1 -lm 

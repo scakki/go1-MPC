@@ -1,4 +1,4 @@
-# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/tasks
+# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/tasks
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

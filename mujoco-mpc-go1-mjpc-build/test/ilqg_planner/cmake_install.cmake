@@ -1,4 +1,4 @@
-# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-ws1/mujoco_mpc-go1/mjpc/test/ilqg_planner
+# Install script for directory: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/test/ilqg_planner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

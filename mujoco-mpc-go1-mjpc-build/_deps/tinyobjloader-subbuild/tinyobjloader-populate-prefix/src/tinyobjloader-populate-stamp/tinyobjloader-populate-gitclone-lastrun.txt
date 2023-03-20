@@ -1,3 +1,15 @@
-repository='https://github.com/tinyobjloader/tinyobjloader.git'
-module=''
-tag='origin'
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake;-P;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/tinyobjloader-subbuild/tinyobjloader-populate-prefix/tmp/tinyobjloader-populate-gitclone.cmake
+source_dir=/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/tinyobjloader-src
+work_dir=/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps
+repository=https://github.com/tinyobjloader/tinyobjloader.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+

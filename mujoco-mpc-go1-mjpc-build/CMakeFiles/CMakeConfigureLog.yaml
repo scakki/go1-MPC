@@ -1,0 +1,1270 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      The system is: Linux - 5.19.0-35-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/3.26.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/3.26.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ceb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ceb2.dir/build.make CMakeFiles/cmTC_9ceb2.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno'
+        Building C object CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -c /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9ceb2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccITcFwZ.s
+        GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3f6cb05d963ad324b8f9442822c95179
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o /tmp/ccITcFwZ.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_9ceb2
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ceb2.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -o cmTC_9ceb2 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ceb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9ceb2.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccY8VUUQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9ceb2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ceb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9ceb2.'
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9ceb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ceb2.dir/build.make CMakeFiles/cmTC_9ceb2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8KfXno']
+        ignore line: [Building C object CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -c /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9ceb2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccITcFwZ.s]
+        ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3f6cb05d963ad324b8f9442822c95179]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o /tmp/ccITcFwZ.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_9ceb2]
+        ignore line: [/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ceb2.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -o cmTC_9ceb2 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ceb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9ceb2.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccY8VUUQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_9ceb2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccY8VUUQ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9ceb2] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_9ceb2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0e8d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0e8d.dir/build.make CMakeFiles/cmTC_f0e8d.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q'
+        Building CXX object CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -c /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f0e8d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccY8z8fm.s
+        GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/11
+         /usr/include/x86_64-linux-gnu/c++/11
+         /usr/include/c++/11/backward
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 449548cbb29044828dc7ea158b577b98
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY8z8fm.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_f0e8d
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0e8d.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f0e8d 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0e8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0e8d.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEXAoB9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0e8d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0e8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0e8d.'
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/11]
+          add: [/usr/include/x86_64-linux-gnu/c++/11]
+          add: [/usr/include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+        collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q]
+        ignore line: []
+        ignore line: [Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0e8d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0e8d.dir/build.make CMakeFiles/cmTC_f0e8d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-ruAR5q']
+        ignore line: [Building CXX object CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -c /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f0e8d.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccY8z8fm.s]
+        ignore line: [GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/11]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+        ignore line: [ /usr/include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 11.3.0-1ubuntu1~22.04) version 11.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 449548cbb29044828dc7ea158b577b98]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccY8z8fm.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_f0e8d]
+        ignore line: [/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0e8d.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f0e8d ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.3.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-xKiWfi/gcc-11-11.3.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.3.0 (Ubuntu 11.3.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0e8d' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f0e8d.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEXAoB9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f0e8d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEXAoB9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f0e8d] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [CMakeFiles/cmTC_f0e8d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "cmake/CheckAvxSupport.cmake:31 (check_c_source_compiles)"
+      - "cmake/MpcOptions.cmake:76 (get_avx_compile_options)"
+      - "CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test CAN_BUILD_AVX"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CAN_BUILD_AVX"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a27c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a27c3.dir/build.make CMakeFiles/cmTC_a27c3.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM'
+        Building C object CMakeFiles/cmTC_a27c3.dir/src.c.o
+        /usr/bin/cc -DCAN_BUILD_AVX  -mavx -std=c11 -fPIE -o CMakeFiles/cmTC_a27c3.dir/src.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM/src.c
+        Linking C executable cmTC_a27c3
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a27c3.dir/link.txt --verbose=1
+        /usr/bin/cc  -mavx CMakeFiles/cmTC_a27c3.dir/src.c.o -o cmTC_a27c3 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-C5cstM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "cmake/MujocoLinkOptions.cmake:38 (check_c_source_compiles)"
+      - "cmake/MpcOptions.cmake:85 (get_mujoco_extra_link_options)"
+      - "CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test SUPPORTS_LLD"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SUPPORTS_LLD"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1e44/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1e44.dir/build.make CMakeFiles/cmTC_a1e44.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b'
+        Building C object CMakeFiles/cmTC_a1e44.dir/src.c.o
+        /usr/bin/cc -DSUPPORTS_LLD  -fuse-ld=lld -std=c11 -fPIE -o CMakeFiles/cmTC_a1e44.dir/src.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b/src.c
+        Linking C executable cmTC_a1e44
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1e44.dir/link.txt --verbose=1
+        /usr/bin/cc  -fuse-ld=lld CMakeFiles/cmTC_a1e44.dir/src.c.o -o cmTC_a1e44 
+        collect2: fatal error: cannot find ‘ld’
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_a1e44.dir/build.make:99: cmTC_a1e44] Error 1
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-WPAu4b'
+        gmake: *** [Makefile:127: cmTC_a1e44/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "cmake/MujocoLinkOptions.cmake:43 (check_c_source_compiles)"
+      - "cmake/MpcOptions.cmake:85 (get_mujoco_extra_link_options)"
+      - "CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test SUPPORTS_GOLD"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SUPPORTS_GOLD"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24131/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24131.dir/build.make CMakeFiles/cmTC_24131.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ'
+        Building C object CMakeFiles/cmTC_24131.dir/src.c.o
+        /usr/bin/cc -DSUPPORTS_GOLD  -fuse-ld=gold -std=c11 -fPIE -o CMakeFiles/cmTC_24131.dir/src.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ/src.c
+        Linking C executable cmTC_24131
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24131.dir/link.txt --verbose=1
+        /usr/bin/cc  -fuse-ld=gold CMakeFiles/cmTC_24131.dir/src.c.o -o cmTC_24131 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2q3UUJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "cmake/MujocoLinkOptions.cmake:50 (check_c_source_compiles)"
+      - "cmake/MpcOptions.cmake:85 (get_mujoco_extra_link_options)"
+      - "CMakeLists.txt:40 (include)"
+    checks:
+      - "Performing Test SUPPORTS_GC_SECTIONS"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "SUPPORTS_GC_SECTIONS"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dfdd2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dfdd2.dir/build.make CMakeFiles/cmTC_dfdd2.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb'
+        Building C object CMakeFiles/cmTC_dfdd2.dir/src.c.o
+        /usr/bin/cc -DSUPPORTS_GC_SECTIONS  -fuse-ld=gold -std=c11 -fPIE -o CMakeFiles/cmTC_dfdd2.dir/src.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb/src.c
+        Linking C executable cmTC_dfdd2
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dfdd2.dir/link.txt --verbose=1
+        /usr/bin/cc  -fuse-ld=gold CMakeFiles/cmTC_dfdd2.dir/src.c.o -o cmTC_dfdd2 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-PDDgHb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:47 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc97e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc97e.dir/build.make CMakeFiles/cmTC_cc97e.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV'
+        Building C object CMakeFiles/cmTC_cc97e.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -std=c11 -fPIE -o CMakeFiles/cmTC_cc97e.dir/src.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV/src.c
+        Linking C executable cmTC_cc97e
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc97e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_cc97e.dir/src.c.o -o cmTC_cc97e 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-70dVqV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:19 (check_include_file)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for sys/types.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5e69/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5e69.dir/build.make CMakeFiles/cmTC_b5e69.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I'
+        Building C object CMakeFiles/cmTC_b5e69.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -std=c11 -fPIE -o CMakeFiles/cmTC_b5e69.dir/CheckIncludeFile.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I/CheckIncludeFile.c
+        Linking C executable cmTC_b5e69
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5e69.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_b5e69.dir/CheckIncludeFile.c.o -o cmTC_b5e69 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-u6rG2I'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:20 (check_include_file)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for inttypes.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4d614/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4d614.dir/build.make CMakeFiles/cmTC_4d614.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A'
+        Building C object CMakeFiles/cmTC_4d614.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -std=c11 -fPIE -o CMakeFiles/cmTC_4d614.dir/CheckIncludeFile.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A/CheckIncludeFile.c
+        Linking C executable cmTC_4d614
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d614.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4d614.dir/CheckIncludeFile.c.o -o cmTC_4d614 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-DB2l4A'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:21 (check_include_file)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for stddef.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6cf3f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6cf3f.dir/build.make CMakeFiles/cmTC_6cf3f.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR'
+        Building C object CMakeFiles/cmTC_6cf3f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -std=c11 -fPIE -o CMakeFiles/cmTC_6cf3f.dir/CheckIncludeFile.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR/CheckIncludeFile.c
+        Linking C executable cmTC_6cf3f
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cf3f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6cf3f.dir/CheckIncludeFile.c.o -o cmTC_6cf3f 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8tLowR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:22 (check_include_file)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for stdint.h"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b82a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1b82a.dir/build.make CMakeFiles/cmTC_1b82a.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in'
+        Building C object CMakeFiles/cmTC_1b82a.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -std=c11 -fPIE -o CMakeFiles/cmTC_1b82a.dir/CheckIncludeFile.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in/CheckIncludeFile.c
+        Linking C executable cmTC_1b82a
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b82a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1b82a.dir/CheckIncludeFile.c.o -o cmTC_1b82a 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-9uC5in'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:25 (check_type_size)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Check size of off_t"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIZEOF_OFF_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f77b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f77b.dir/build.make CMakeFiles/cmTC_8f77b.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85'
+        Building C object CMakeFiles/cmTC_8f77b.dir/SIZEOF_OFF_T.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -o CMakeFiles/cmTC_8f77b.dir/SIZEOF_OFF_T.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85/SIZEOF_OFF_T.c
+        Linking C executable cmTC_8f77b
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f77b.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_8f77b.dir/SIZEOF_OFF_T.c.o -o cmTC_8f77b 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-XXRn85'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:27 (check_symbol_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for fseeko"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a4efe/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a4efe.dir/build.make CMakeFiles/cmTC_a4efe.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA'
+        Building C object CMakeFiles/cmTC_a4efe.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -o CMakeFiles/cmTC_a4efe.dir/CheckSymbolExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA/CheckSymbolExists.c
+        Linking C executable cmTC_a4efe
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4efe.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a4efe.dir/CheckSymbolExists.c.o -o cmTC_a4efe 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-JRloaA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:28 (check_symbol_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for ftello"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_FTELLO"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b64ce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b64ce.dir/build.make CMakeFiles/cmTC_b64ce.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6'
+        Building C object CMakeFiles/cmTC_b64ce.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -o CMakeFiles/cmTC_b64ce.dir/CheckSymbolExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6/CheckSymbolExists.c
+        Linking C executable cmTC_b64ce
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b64ce.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b64ce.dir/CheckSymbolExists.c.o -o cmTC_b64ce 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-8xInY6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/build/CMakeModules/CheckLFS.cmake:34 (check_symbol_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/qhull-src/CMakeLists.txt:102 (check_lfs)"
+    checks:
+      - "Looking for PRIdMAX"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `qhull`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PRIDMAX"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1019d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1019d.dir/build.make CMakeFiles/cmTC_1019d.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ'
+        Building C object CMakeFiles/cmTC_1019d.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -fPIE -o CMakeFiles/cmTC_1019d.dir/CheckSymbolExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ/CheckSymbolExists.c
+        Linking C executable cmTC_1019d
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1019d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_1019d.dir/CheckSymbolExists.c.o -o cmTC_1019d 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-M0DWuJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/ccd-src/src/CMakeLists.txt:75 (check_cxx_compiler_flag)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/ccd-src/src/CMakeLists.txt:79 (check_compiler_visibility)"
+    checks:
+      - "Performing Test COMPILER_SUPPORTS_VISIBILITY"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `ccd`"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `mujoco`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/mujoco-src/cmake"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_SUPPORTS_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_47ca4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47ca4.dir/build.make CMakeFiles/cmTC_47ca4.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs'
+        Building CXX object CMakeFiles/cmTC_47ca4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORTS_VISIBILITY  -std=c++17 -fPIE   -fvisibility=hidden -o CMakeFiles/cmTC_47ca4.dir/src.cxx.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs/src.cxx
+        Linking CXX executable cmTC_47ca4
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47ca4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_47ca4.dir/src.cxx.o -o cmTC_47ca4 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-GFIDXs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/CMake/AbseilDll.cmake:605 (check_cxx_source_compiles)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/CMakeLists.txt:86 (include)"
+    checks:
+      - "Performing Test ABSL_INTERNAL_AT_LEAST_CXX17"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `abseil-cpp`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/CMake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/abseil-cpp-src/absl/copts"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "ABSL_INTERNAL_AT_LEAST_CXX17"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6eda5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6eda5.dir/build.make CMakeFiles/cmTC_6eda5.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x'
+        Building CXX object CMakeFiles/cmTC_6eda5.dir/src.cxx.o
+        /usr/bin/c++ -DABSL_INTERNAL_AT_LEAST_CXX17  -std=c++20 -fPIE -o CMakeFiles/cmTC_6eda5.dir/src.cxx.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x/src.cxx
+        Linking CXX executable cmTC_6eda5
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6eda5.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_6eda5.dir/src.cxx.o -o cmTC_6eda5 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-W4Xo4x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:498 (check_library_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ea19/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0ea19.dir/build.make CMakeFiles/cmTC_0ea19.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I'
+        Building C object CMakeFiles/cmTC_0ea19.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -std=c11 -fPIE -o CMakeFiles/cmTC_0ea19.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I/CheckFunctionExists.c
+        Linking C executable cmTC_0ea19
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ea19.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_0ea19.dir/CheckFunctionExists.c.o -o cmTC_0ea19  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-SbH58I'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:513 (check_function_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06779/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_06779.dir/build.make CMakeFiles/cmTC_06779.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo'
+        Building C object CMakeFiles/cmTC_06779.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -std=c11 -fPIE -o CMakeFiles/cmTC_06779.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo/CheckFunctionExists.c
+        Linking C executable cmTC_06779
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06779.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_06779.dir/CheckFunctionExists.c.o -o cmTC_06779 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-sFiUvo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:527 (check_function_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for connect"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_37fc8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37fc8.dir/build.make CMakeFiles/cmTC_37fc8.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3'
+        Building C object CMakeFiles/cmTC_37fc8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -std=c11 -fPIE -o CMakeFiles/cmTC_37fc8.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3/CheckFunctionExists.c
+        Linking C executable cmTC_37fc8
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37fc8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_37fc8.dir/CheckFunctionExists.c.o -o cmTC_37fc8 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-T5zxF3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:536 (check_function_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for remove"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_45938/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45938.dir/build.make CMakeFiles/cmTC_45938.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG'
+        Building C object CMakeFiles/cmTC_45938.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -std=c11 -fPIE -o CMakeFiles/cmTC_45938.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG/CheckFunctionExists.c
+        Linking C executable cmTC_45938
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45938.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_45938.dir/CheckFunctionExists.c.o -o cmTC_45938 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-xhUOuG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckFunctionExists.cmake:91 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:545 (check_function_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for shmat"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8af59/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8af59.dir/build.make CMakeFiles/cmTC_8af59.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS'
+        Building C object CMakeFiles/cmTC_8af59.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -std=c11 -fPIE -o CMakeFiles/cmTC_8af59.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS/CheckFunctionExists.c
+        Linking C executable cmTC_8af59
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8af59.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_8af59.dir/CheckFunctionExists.c.o -o cmTC_8af59 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-2ce9SS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/share/cmake-3.26/Modules/FindX11.cmake:555 (check_library_exists)"
+      - "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMakeLists.txt:208 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+      - "mujoco::FindOrFetch: Using FetchContent to retrieve `glfw`"
+    directories:
+      source: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv"
+      binary: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco_mpc-go1/mjpc/cmake;/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/_deps/glfw-src/CMake/modules"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv
+        
+        Run Build Command(s):/home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c48e6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c48e6.dir/build.make CMakeFiles/cmTC_c48e6.dir/build
+        gmake[1]: Entering directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv'
+        Building C object CMakeFiles/cmTC_c48e6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -std=c11 -fPIE -o CMakeFiles/cmTC_c48e6.dir/CheckFunctionExists.c.o -c /home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv/CheckFunctionExists.c
+        Linking C executable cmTC_c48e6
+        /home/leggedrobot/anaconda3/lib/python3.9/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c48e6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_c48e6.dir/CheckFunctionExists.c.o -o cmTC_c48e6  -lICE 
+        gmake[1]: Leaving directory '/home/leggedrobot/Documents/GitHub/go1-MPC/mujoco-mpc-go1-mjpc-build/CMakeFiles/CMakeScratch/TryCompile-070gOv'
+        
+      exitCode: 0
+...
