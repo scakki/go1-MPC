@@ -20,7 +20,7 @@ cd bin\
 To run the simulation;
 ```
 cd mujoco-mpc-go1-mjpc-build
-.\mjpc
+./mjpc
 ```
 
 ## GUI usage 
