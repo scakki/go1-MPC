@@ -65,6 +65,7 @@ findorfetch(
   TARGETS
   mujoco::mujoco
   EXCLUDE_FROM_ALL
+  PATHS /home/leggedrobot/.mujoco/mujoco-main
 )
 
 set(MJPC_DEP_VERSION_abseil
