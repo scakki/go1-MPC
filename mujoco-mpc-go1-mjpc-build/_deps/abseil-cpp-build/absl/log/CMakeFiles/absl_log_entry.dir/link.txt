@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/libabsl_log_entry.a CMakeFiles/absl_log_entry.dir/log_entry.cc.o
-/usr/bin/ranlib ../../../../lib/libabsl_log_entry.a

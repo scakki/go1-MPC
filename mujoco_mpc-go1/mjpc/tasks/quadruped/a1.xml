@@ -17,7 +17,7 @@
         <position ctrlrange="-1.9472 3.28879"/>
       </default>
       <default class="knee">
-        <joint range="-0.89653 0.883702" ref="1.8"/>
+        <joint range="-0.89653 0.883702" ref="1.0"/>
         <position ctrlrange="-0.89653 0.883702"/>
       </default>
       <default class="visual">
@@ -68,7 +68,7 @@
 
   <worldbody>
     <light pos="0 0 2" mode="trackcom" diffuse="0.8 0.8 0.8"/>
-    <body name="trunk" pos="0.0 0.0 0.5" quat="1 0 0 0" childclass="a1">
+    <body name="trunk" pos="0.0 0.0 10" quat="1 0 0 0" childclass="a1">
       <site name="torso"/>
       <freejoint/>
       <inertial mass="4.713" pos="0 0.0041 -0.0005"

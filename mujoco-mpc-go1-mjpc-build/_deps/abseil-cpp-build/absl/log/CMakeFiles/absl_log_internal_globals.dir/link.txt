@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/libabsl_log_internal_globals.a CMakeFiles/absl_log_internal_globals.dir/internal/globals.cc.o
-/usr/bin/ranlib ../../../../lib/libabsl_log_internal_globals.a

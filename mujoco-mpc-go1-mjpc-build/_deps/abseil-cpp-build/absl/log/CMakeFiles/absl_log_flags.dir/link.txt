@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/libabsl_log_flags.a CMakeFiles/absl_log_flags.dir/flags.cc.o
-/usr/bin/ranlib ../../../../lib/libabsl_log_flags.a
