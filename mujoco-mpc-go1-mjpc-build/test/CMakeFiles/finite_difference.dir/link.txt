@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../lib/libfinite_difference.a CMakeFiles/finite_difference.dir/finite_difference.cc.o
-/usr/bin/ranlib ../lib/libfinite_difference.a

@@ -1,3 +1,0 @@
-repository='https://github.com/tinyobjloader/tinyobjloader.git'
-module=''
-tag='origin'
