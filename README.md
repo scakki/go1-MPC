@@ -12,8 +12,8 @@ The go1-MPC repo is based on MuJoCo MPC and additionally includes Unitree 0o1 ro
 **mujoco-mpc-go1-mjpc-build** is the build file of mujoco_mpc-go1\mjpc. If any changes made to the source file, it can built as follows
 ```
 cd mujoco-mpc-go1-mjpc-build 
-cmake ..\mujoco_mpc-go1\mjpc .
-make 
+cmake -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ /path/to/source -DCMAKE_BUILD_TYPE:STRING=Release
+make -j 8
 cd bin\
 ```
 
