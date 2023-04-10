@@ -5,6 +5,23 @@ https://github.com/deepmind/mujoco_mpc (For detailed usage of MuJoCo MPC refer t
 
 The go1-MPC repo is based on MuJoCo MPC and additionally includes Unitree 0o1 robot simulation. 
 
+## Compiler setup
+```
+sudo apt-get remove g++ gcc
+rm -rf ~/.gcc* ~/.g++* ~/.cpp*
+sudo apt-get install g++ gcc
+sudo apt-get remove clang clang-14 clang-12
+export PATH=/usr/bin/:$PATH
+sudo apt install clang-14
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/clang++-14 80
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/clang-14 80
+sudo update-alternatives --config c++
+g++ --version
+gcc --version
+clang++ -v
+clang -v
+```
+
 ## go1-MPC usage
 
 **mujoco_mpc-go1** is the source file. Any changes to the code should be done here.
