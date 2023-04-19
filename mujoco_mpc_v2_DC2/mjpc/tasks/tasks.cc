@@ -85,7 +85,7 @@ const TaskDefinition<const char*> kTasksArray[]{
         .name = "Quadruped FlatGo1",
         .xml_path = "quadruped-go1/task_flat1.xml",
         .residual = &QuadrupedGo1::ResidualFloor,
-    // },
+    },
     // {
     //     .name = "Quadruped HillGo1",
     //     .xml_path = "quadruped-go1/task_hill1.xml",
