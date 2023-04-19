@@ -14,6 +14,7 @@
 
 #include "third_party/mujoco_mpc/mjpc/interface.h"
 
+#include <fstream>
 #include <memory>
 #include <string>
 #include <vector>
@@ -48,9 +49,24 @@ AgentRunner::~AgentRunner() {
 }
 
 void AgentRunner::Step(mjData* data) {
+  // Open file in append mode
+  std::ofstream outFile;
+  outFile.open("data.txt", std::ios_base::app);
+
+  // Check if file is opened successfully
+  if (outFile.is_open()) {
+    // Write data value to file
+    outFile << data << std::endl;
+    // Close the file
+    outFile.close();
+  } else {
+    std::cerr << "Unable to open file!" << std::endl;
+  }
+
   agent_.SetState(data);
   agent_.ActivePlanner().ActionFromPolicy(
     data->ctrl, &agent_.ActiveState().state()[0], agent_.ActiveState().time());
+  //  mj_printData(data, "MJD.TXT");
 }
 
 void AgentRunner::Residual(const mjModel* model, mjData* data) {
@@ -95,5 +111,22 @@ extern "C" void create_policy(const mjModel* model,
 extern "C" void step_policy(mjData* data) {
   if (runner != nullptr) {
     runner->Step(data);
+
+    // Open a file in write mode
+    std::ofstream outfile;
+    outfile.open("data.txt", std::ios_base::app);
+    
+    // Check if the file was opened successfully
+    if (!outfile) {
+      std::cerr << "Error: Cannot open file!" << std::endl;
+      return;
+    }
+    
+    // Write the data value to the file
+    outfile << "Data value: " << data << std::endl;
+    
+    // Close the file
+    outfile.close();
+//    mj_printData(data, "MJD.TXT");
   }
 }
