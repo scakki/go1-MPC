@@ -6,39 +6,22 @@ https://github.com/deepmind/mujoco_mpc (For detailed usage of MuJoCo MPC refer t
 The go1-MPC repo is based on MuJoCo MPC and additionally includes Unitree 0o1 robot simulation. 
 
 ## Compiler setup
-```
-sudo apt-get remove g++ gcc
-rm -rf ~/.gcc* ~/.g++* ~/.cpp*
-sudo apt-get install g++ gcc
-sudo apt-get remove clang clang-14 clang-12
-export PATH=/usr/bin/:$PATH
-sudo apt install clang-14
-sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/clang++-14 80
-sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/clang-14 80
-sudo update-alternatives --config c++
-g++ --version
-gcc --version
-clang++ -v
-clang -v
-```
 
-## go1-MPC usage
+Build in VSCode.
+We used GCC 11 compiler.
 
-**mujoco_mpc-go1** is the source file. Any changes to the code should be done here.
+## Required Changes to be done for Data Collection
 
-**mujoco-mpc-go1-mjpc-build** is the build file of mujoco_mpc-go1\mjpc. If any changes made to the source file, it can built as follows
-```
-cd mujoco-mpc-go1-mjpc-build 
-cmake -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ /path/to/source -DCMAKE_BUILD_TYPE:STRING=Release
-make -j 8
-cd bin\
-```
+Navigate to build/_deps/mujoco-src/src/engine/engine_print.c in VSCode. In mj_printFormattedData, line 744, change file mode from "wt" (write) to "a" (append).
+
+## Usage of go1-MPC
 
 To run the simulation;
 ```
-cd mujoco-mpc-go1-mjpc-build
+cd mujoco_mpc_v2_DC/mjpc/build
 ./mjpc
 ```
+or use cmake tool to debug from VSCode run the target file(mjpc).
 
 ## GUI usage 
 
