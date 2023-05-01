@@ -81,7 +81,8 @@ void controller(const mjModel* m, mjData* data) {
     sim->agent.ActivePlanner().ActionFromPolicy(
         data->ctrl, &sim->agent.ActiveState().state()[0],
         sim->agent.ActiveState().time());
-  }
+        mj_printData(m, d, "MJDATA.dat");
+  } 
   // if noise
   if (!sim->agent.allocate_enabled && sim->uiloadrequest.load() == 0 &&
       sim->ctrlnoisestd) {

@@ -32,6 +32,8 @@
 #include "array_safety.h"
 
 #include "agent.h"
+#include "mujoco/mjdata.h"
+#include "mujoco/mjui.h"
 #include "utilities.h"
 
 // When launched via an App Bundle on macOS, the working directory is the path
@@ -936,6 +938,7 @@ void copykey(mj::Simulate* sim) {
 // millisecond timer, for MuJoCo built-in profiler
 mjtNum timer() {
   return Milliseconds(mj::Simulate::Clock::now().time_since_epoch()).count();
+  
 }
 
 // clear all times
@@ -1116,11 +1119,17 @@ void uiEvent(mjuiState* state) {
         break;
 
       case 2:             // Print model
-        mj_printModel(m, "MJMODEL.TXT");
+        mj_printModel(m, "MJMODEL.dat");
         break;
 
       case 3:             // Print data
-        mj_printData(m, d, "MJDATA.TXT");
+        // for (int i = 0; i < 3; i++) {
+        //   mjModel* m = sim->m;
+        //   mjData* d = sim->d;
+        //   mj_printData(m, d, "MJDATA.dat");
+        //   std::this_thread::sleep_for(std::chrono::seconds(2));
+        // }
+        mj_printData(m, d, "MJDATA.dat");
         break;
 
       case 4:             // Quit
@@ -1229,6 +1238,7 @@ void uiEvent(mjuiState* state) {
     // task section
     else if (it && it->sectionid == SECT_TASK) {
       sim->agent.TaskEvent(it, sim->d, sim->uiloadrequest, sim->run);
+
     }
 
     // agent section
@@ -1438,7 +1448,6 @@ void uiEvent(mjuiState* state) {
       sim->agent.visualize_enabled = !sim->agent.visualize_enabled;
       break;
     }
-
     return;
   }
 
@@ -1947,7 +1956,6 @@ void Simulate::renderloop() {
   mjv_defaultOption(&this->vopt);
   profilerinit(this);
   sensorinit(this);
-
   // make empty scene
   mjv_defaultScene(&this->scn);
   mjv_makeScene(nullptr, &this->scn, maxgeom);
