@@ -1,0 +1,31 @@
+# Don't commit binaries
+*.a
+*.asm
+*.dll
+*.dylib
+*.exe
+*.lib
+*.out
+*.o
+*.so
+*.so.*
+# Clang cache
+.cache/
+# Exclude editor config
+.vscode/
+.vs/
+# Exclude temporary folders
+*.egg-info/
+build/
+mujoco_mpc_v2_DC2/mjpc/build/
+build_cmake/
+# Exclude macOS folder attributes
+.DS_Store
+# Exclude macOS Info.framework.plist
+Info.framework.plist
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# MuJoCo
+MUJOCO_LOG.TXT
