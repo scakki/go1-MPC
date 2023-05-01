@@ -21,7 +21,7 @@ To run the simulation;
 cd mujoco_mpc_v2_DC/mjpc/build
 ./mjpc
 ```
-or use cmake tool to debug from VSCode run the target file(mjpc).
+or use cmake tool to debug from VSCode while will run the target file(mjpc).
 
 ## GUI usage 
 
