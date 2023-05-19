@@ -1119,7 +1119,7 @@ void uiEvent(mjuiState* state) {
         break;
 
       case 2:             // Print model
-        mj_printModel(m, "MJMODEL.dat");
+        mj_printModel(m, "MJMODEL.csv");
         break;
 
       case 3:             // Print data
@@ -1129,7 +1129,7 @@ void uiEvent(mjuiState* state) {
         //   mj_printData(m, d, "MJDATA.dat");
         //   std::this_thread::sleep_for(std::chrono::seconds(2));
         // }
-        mj_printData(m, d, "MJDATA.dat");
+        mj_printData(m, d, "MJDATA.csv");
         break;
 
       case 4:             // Quit
