@@ -240,6 +240,8 @@ add_library(
   tasks/quadrotor/quadrotor.h
   tasks/quadruped/quadruped.cc
   tasks/quadruped/quadruped.h
+  tasks/quadruped-go1/quadruped-go1.cc
+  tasks/quadruped-go1/quadruped-go1.h
   tasks/swimmer/swimmer.cc
   tasks/swimmer/swimmer.h
   tasks/walker/walker.cc
