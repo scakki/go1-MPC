@@ -1,7 +1,7 @@
 <mujoco model="Unitree A1">
   <compiler angle="radian" meshdir="assets" texturedir="assets"/>
 
-  <option cone="elliptic" impratio="100"/>
+  <!-- <option cone="elliptic" impratio="100"/> -->
 
   <default>
     <default class="a1">
@@ -15,19 +15,8 @@
       <default class="hip">
         <joint range="-1.9472 3.28879" ref="-0.9"/>
         <position ctrlrange="-1.9472 3.28879"/>
-      </default>
-      <default class="knee">
-        <joint range="-0.89653 0.883702" ref="1.8"/>
-        <position ctrlrange="-0.89653 0.883702"/>
-      </default>
-      <default class="visual">
-        <geom type="mesh" contype="0" conaffinity="0" group="2" material="dark"/>
-      </default>
-      <default class="collision">
-        <geom group="3" type="capsule"/>
-        <default class="hip_left">
-          <geom size="0.04 0.04" quat="1 1 0 0" type="cylinder" pos="0 0.055 0"/>
-        </default>
+      </default>range="-0.89653 0.883702"/>
+      </default><!-- <option cone="elliptic" impratio="100"/> -->
         <default class="hip_right">
           <geom size="0.04 0.04" quat="1 1 0 0" type="cylinder" pos="0 -0.055 0"/>
         </default>
@@ -48,7 +37,7 @@
         </default>
         <default class="foot">
           <geom type="sphere" size="0.02" pos="0 0 -0.2" priority="1" solimp="0.015 1 0.031"
-              condim="6" friction="0.8 0.02 0.01"/>
+              condim="6" friction="0.3 0.02 0.01"/>
         </default>
       </default>
     </default>
