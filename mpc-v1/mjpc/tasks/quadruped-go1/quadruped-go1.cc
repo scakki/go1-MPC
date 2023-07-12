@@ -78,7 +78,8 @@ void QuadrupedGo1::Residual(const double* parameters, const mjModel* model,
 //   If quadruped is within tolerance of goal ->
 //   set goal to next from keyframes.
 // -----------------------------------------------
-int QuadrupedGo1::Transition(int state, const mjModel* model, mjData* data) {
+int QuadrupedGo1::Transition(int state, const mjModel* model, mjData* data,
+                          Task* task) {
   int new_state = state;
 
   // ---------- Compute tolerance ----------

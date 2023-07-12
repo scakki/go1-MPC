@@ -36,6 +36,8 @@
 namespace mjpc {
 
 std::vector<std::shared_ptr<Task>> GetTasks() {
+    new QuadrupedGo1Flat();
+    std::make_shared<QuadrupedGo1Hill>();
   return {
     std::make_shared<Acrobot>(),
     std::make_shared<Cartpole>(),
