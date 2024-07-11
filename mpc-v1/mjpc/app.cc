@@ -44,6 +44,11 @@ namespace {
 namespace mj = ::mujoco;
 namespace mju = ::mujoco::util_mjpc;
 
+// Perturbation parameters
+const double perturbationForceMagnitude = 10000000.0; // Force magnitude in x direction  // Added line
+const double perturbationInterval = 20.0; // Interval in seconds  // Added line
+double lastPerturbationTime = 0.0; // Time of the last perturbation  // Added line
+
 // maximum mis-alignment before re-sync (simulation seconds)
 const double syncMisalign = 0.1;
 
@@ -316,14 +321,27 @@ void PhysicsLoop(mj::Simulate& sim) {
             mju_zero(d->xfrc_applied, 6 * m->nbody);
             sim.applyposepertubations(0);  // move mocap bodies only
             sim.applyforceperturbations();
+            std::cout << "Im just before the perturb loop!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
+            // Apply perturbation force at specified intervals
+             
 
             // run single step, let next iteration deal with timing
             mj_step(m, d);
+            //std::cout << "Im after the perturb loop" << std::endl;
           } else {  // in-sync: step until ahead of cpu
             bool measured = false;
             mjtNum prevSim = d->time;
             double refreshTime = simRefreshFraction / sim.refreshRate;
 
+            std::cout << d->time << std::endl;
+            //if (perturbationInterval+10 >= d->time - lastPerturbationTime >= perturbationInterval) {
+            if (d->time >= 5) { 
+                d->xfrc_applied[6 * 3 + 1] = 1000;
+                lastPerturbationTime = d->time;
+                std::cout << d->xfrc_applied[6 * 3 + 1] << std::endl;
+
+            } 
+            
             // step while sim lags behind cpu and within refreshTime
             while (Seconds((d->time - syncSim)*slowdown) < mj::Simulate::Clock::now() - syncCPU &&
                    mj::Simulate::Clock::now() - startCPU < Seconds(refreshTime)) {
@@ -342,10 +360,11 @@ void PhysicsLoop(mj::Simulate& sim) {
               // call mj_step
               mj_step(m, d);
 
+              //std::cout << "Im after the perturb loop"  << std::endl;
               // break if reset
               if (d->time < prevSim) {
                 break;
-              }
+              }            
             }
           }
         } else {  // paused

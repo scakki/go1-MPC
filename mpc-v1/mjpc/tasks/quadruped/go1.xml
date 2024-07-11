@@ -1,10 +1,10 @@
 <mujoco model="go1_description">
     <compiler angle="radian" meshdir="go1-meshes/" />
     <size nconmax="100" />
-    <option gravity='0 0 -9.806' iterations='50' solver='Newton' timestep='0.002'/>
+    <option gravity='0 0 -9.806' iterations='50' solver='Newton' timestep='0.01'/>
 
     <default>
-        <geom contype="1" conaffinity="1" friction="0.8 0.3 0.3" rgba="0.5 0.6 0.7 1" margin="0.001" group="0"/>
+        <geom contype="1" conaffinity="1" friction="0.6 0.3 0.3" rgba="0.5 0.6 0.7 1" margin="0.001" group="0"/>
 
         <light castshadow="false" diffuse="1 1 1"/>
         <position kp="50" forcelimited="true" ctrllimited="true" forcerange="-33.5 33.5"/>
@@ -19,6 +19,7 @@
             <!--Also the range and control range values have been changed to the actual values of the Go1 from the Go1 manual-->
             <!--Here ref = 0; range = (-60 to 60 degrees) (equivalent range value has been used here); and control range = (-60 to 60 degrees)-->
         </default>
+        
         <default class="thigh">
             <joint range="-1.563225 2.06706" ref="-0.9"/>
             <position ctrlrange="-1.563225 2.06706"/>

@@ -1462,7 +1462,7 @@ void uiEvent(mjuiState* state) {
   // 3D press
   if (state->type==mjEVENT_PRESS && state->mouserect==3 && m) {
     // set perturbation
-    int newperturb = 0;
+    int newperturb = 1000000;
     if (state->control && sim->pert.select>0) {
       // right: translate;  left: rotate
       if (state->right) {

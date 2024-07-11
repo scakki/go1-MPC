@@ -26,6 +26,9 @@
   <worldbody>
     <light pos="0 0 1.5" dir="0 0 -1" diffuse="0.5 0.5 0.5" specular="0.3 0.3 0.3"
       directional="true" castshadow="false"/>
+    <body name="goal" mocap="true" pos="-0.125 -0.625 0.25" quat="0.7071 0 0 -0.7071">
+      <geom type="capsule" size="0.1 0.1 0.05" contype="0" conaffinity="0" rgba="0 1 0 .5" fromto="-0.1 0 0 0.1 0 0"/>
+    </body>
     <geom name="floor" size="50 50 0.05" pos="0 0 -0.01" type="plane" material="blue_grid"/>
   </worldbody>
 
@@ -39,6 +42,7 @@
     <framepos      name="trace0" objtype="body" objname="trunk"/>
     <subtreecom    name="torso_subtreecom" body="trunk"/>
     <subtreelinvel name="torso_subtreelinvel" body="trunk"/>
+    <framequat     name="orientation" objtype="xbody" objname="trunk"/>
     <framezaxis    name="torso_up" objtype="xbody" objname="trunk"/>
     <framexaxis    name="torso_forward" objtype="xbody" objname="trunk"/>
     <framepos      name="position" objtype="body" objname="trunk"/>
@@ -93,9 +97,5 @@
         <!framequat name="Body_Quat" objtype="site" objname="imu"/>
         
     
-    <!/sensor>
-
-  <keyframe>
-    <key name="home" qpos="0 0 0.3 0.999944 -0.000299272 -0.0101993 0.00264232 -0.000341931 0.0181576 -0.0268335 0.00160968 0.0247957 -0.0270045 0.00191398 -0.033048 -0.0675298 -0.00199489 -0.0374747 -0.0681862"/>
-  </keyframe>
+    <!/sensor?>
 </mujoco>

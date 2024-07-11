@@ -215,7 +215,6 @@ class MJSIMULATEAPI Simulate {
     {mjITEM_BUTTON,    "Load key",      3},
     {mjITEM_BUTTON,    "Save key",      3},
     {mjITEM_SLIDERNUM, "Noise scale",   2, &this->ctrlnoisestd,  "0 2"},
-    {mjITEM_SLIDERNUM, "Noise rate",    2, &this->ctrlnoiserate, "0 2"},
     {mjITEM_END}
   };
 

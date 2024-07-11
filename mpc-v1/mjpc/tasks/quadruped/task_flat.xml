@@ -39,6 +39,7 @@
     <framepos      name="trace0" objtype="body" objname="trunk"/>
     <subtreecom    name="torso_subtreecom" body="trunk"/>
     <subtreelinvel name="torso_subtreelinvel" body="trunk"/>
+    <framequat     name="orientation" objtype="xbody" objname="trunk"/>
     <framezaxis    name="torso_up" objtype="xbody" objname="trunk"/>
     <framexaxis    name="torso_forward" objtype="xbody" objname="trunk"/>
     <framepos      name="position" objtype="body" objname="trunk"/>

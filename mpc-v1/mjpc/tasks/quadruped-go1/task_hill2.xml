@@ -32,8 +32,10 @@
 
   <sensor>
     <user name="Upright" dim="3" user="0 3 0 10" />
-    <user name="Velocity" dim="2" user="7 1 0 5 .2 4" />
-    <user name="Heading" dim="2" user="0 1 0 5" />
+    <user name="Body Pos." dim="3" user="0 5.0 0.0 100.0" />
+    <user name="Body Rot." dim="9" user="0 1.0 0.0 10.0" />
+    <!user name="Velocity" dim="2" user="7 1 0 5 .2 4" />
+    <!user name="Heading" dim="2" user="0 1 0 5" />
     <user name="Control" dim="12" user="0 0.2 0.0 1.0" />
     <framepos      name="trace0" objtype="body" objname="trunk"/>
     <subtreecom    name="torso_subtreecom" body="trunk"/>
