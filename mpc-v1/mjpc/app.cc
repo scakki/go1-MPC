@@ -321,9 +321,13 @@ void PhysicsLoop(mj::Simulate& sim) {
             mju_zero(d->xfrc_applied, 6 * m->nbody);
             sim.applyposepertubations(0);  // move mocap bodies only
             sim.applyforceperturbations();
-            std::cout << "Im just before the perturb loop!!!!!!!!!!!!!!!!!!!!!!!!!!" << std::endl;
-            // Apply perturbation force at specified intervals
-             
+
+            std::cout << d->time << std::endl;
+            if (19.8 <= d->time && d->time <= 20) {
+              d->xfrc_applied[6 * 2 + 0] = 20;
+              std::cout << d->xfrc_applied[6 * 2 + 1] << std::endl;
+            }
+            else {d->xfrc_applied[6 * 2 + 1] = 0;}
 
             // run single step, let next iteration deal with timing
             mj_step(m, d);
@@ -332,15 +336,6 @@ void PhysicsLoop(mj::Simulate& sim) {
             bool measured = false;
             mjtNum prevSim = d->time;
             double refreshTime = simRefreshFraction / sim.refreshRate;
-
-            std::cout << d->time << std::endl;
-            //if (perturbationInterval+10 >= d->time - lastPerturbationTime >= perturbationInterval) {
-            if (d->time >= 5) { 
-                d->xfrc_applied[6 * 3 + 1] = 1000;
-                lastPerturbationTime = d->time;
-                std::cout << d->xfrc_applied[6 * 3 + 1] << std::endl;
-
-            } 
             
             // step while sim lags behind cpu and within refreshTime
             while (Seconds((d->time - syncSim)*slowdown) < mj::Simulate::Clock::now() - syncCPU &&
@@ -356,6 +351,13 @@ void PhysicsLoop(mj::Simulate& sim) {
               mju_zero(d->xfrc_applied, 6 * m->nbody);
               sim.applyposepertubations(0);  // move mocap bodies only
               sim.applyforceperturbations();
+
+              std::cout << d->time << std::endl;
+              if (14.8 <= d->time && d->time <= 15) { 
+                d->xfrc_applied[6 * 2 + 0] = 270;
+                std::cout << d->xfrc_applied[6 * 2 + 1] << std::endl;
+              }
+              else {d->xfrc_applied[6 * 2 + 1] = 0;}
 
               // call mj_step
               mj_step(m, d);
